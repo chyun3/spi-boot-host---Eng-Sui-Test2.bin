@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.32.0.0
+Copyright (C) 2020 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: IC G, GIC, LIC=NQQMA-1S1S7-ARIXW-Q0NZ2-C0LQK-38NBG
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.32.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.32.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      Segger\JL2CM3.dll V2.99.38.0
+Dialog DLL:      TCM.DLL V1.46.0.0
+ 
+<h2>Project:</h2>
+C:\Users\chyun\Desktop\Ambiq_Micro\AmbiqSuite-R2.5.1\boards\apollo3_evb\examples\spi_boot_host-master_20210719_EngSui_Test2_20210720_1530_2Chunk_4_size\keil\uart_boot_host.uvprojx
+Project File Date:  05/20/2021
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'uart_boot_host'
+assembling img_data.s...
+compiling am_util_delay.c...
+compiling uart_boot_host.c...
+../src/uart_boot_host.c(305): warning:  #550-D: variable "pGpioIntMask"  was set but never used
+      AM_HAL_GPIO_MASKCREATE(GpioIntMask);
+../src/uart_boot_host.c(643): warning:  #177-D: variable "u32TotalSize"  was declared but never referenced
+  	uint32_t u32TotalSize = ((uint8_t *)(&IMGDataEnd) - (uint8_t *)(&IMGDataBegin));
+../src/uart_boot_host.c: 2 warnings, 0 errors
+compiling am_util_stdio.c...
+compiling am_util_faultisr.c...
+compiling startup_keil.s...
+linking...
+Program Size: Code=14076 RO-data=412748 RW-data=140 ZI-data=29476  
+After Build - User command #1: fromelf --bin --output bin\uart_boot_host.bin bin\uart_boot_host.axf
+After Build - User command #2: fromelf -cedrst --output bin\uart_boot_host.txt bin\uart_boot_host.axf
+".\bin\uart_boot_host.axf" - 0 Error(s), 2 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: AmbiqMicro
+                http://s3.asia.ambiqmicro.com/pack/AmbiqMicro.Apollo_DFP.1.2.0.pack
+                AmbiqMicro.Apollo_DFP.1.2.0
+                Ambiq Micro Apollo Series Device Support
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\chyun\AppData\Local\Arm\Packs\AmbiqMicro\Apollo_DFP\1.2.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>
